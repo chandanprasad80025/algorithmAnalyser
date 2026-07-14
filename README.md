@@ -6,7 +6,7 @@ Most teaching tools draw a curve that goes up and to the right, label it `O(n²)
 
 Everything on screen is a measurement. Nothing is a claim.
 
-![Algorithm Complexity Analyzer running a bubble sort analysis across four panels](docs/screenshot.png)
+![Algorithm Complexity Analyzer running a bubble sort analysis across four panels](algorithmAnalyser/screenshot.png)
 
 <p align="center">
 <sub>A completed bubble sort run, n = 10 to 1000, log-spaced, minimum of 5 repeats.<br>
