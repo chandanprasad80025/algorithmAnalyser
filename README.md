@@ -6,7 +6,20 @@ Most teaching tools draw a curve that goes up and to the right, label it `O(n²)
 
 Everything on screen is a measurement. Nothing is a claim.
 
-![screenshot](docs/screenshot.png)
+![Algorithm Complexity Analyzer running a bubble sort analysis across four panels](docs/screenshot.png)
+
+<p align="center">
+<sub>A completed bubble sort run, n = 10 to 1000, log-spaced, minimum of 5 repeats.<br>
+Fitted exponents: <b>best n^0.96, average n^2.04, worst n^2.0</b>. The theory survived.</sub>
+</p>
+
+Three things in that screenshot are worth pointing at, because they are the whole argument:
+
+- **Panel 01.** The green best-case line lies flat on the x-axis while the other two climb. That flat line is bubble sort's early exit, doing its job.
+- **Panel 02.** The red worst-case comparison curve does not merely resemble the dotted `n(n-1)/2` reference. It sits **on** it. At n=1000 that is 499,500 comparisons, predicted and measured.
+- **Panel 04.** Blue and red go flat under `T(n)/n²`, so they are quadratic. Green dives toward zero, because `T ~ n` means `T/n² ~ 1/n`. It is not quadratic, and the graph says so without being told.
+
+And in the RESULTS panel, the sentence the whole project exists to print: `k = 0.959 ... matches predicted n^1`.
 
 ---
 
